@@ -38,7 +38,7 @@
 		3CA3181D23BE561D003E100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA3184223BE5BDB003E100E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3CA3184623BE5DF3003E100E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = "/Users/Luobro/workspace/swift demo/游戏基/yxj/Podfile"; sourceTree = "<absolute>"; };
-		3CA3184723BE5E07003E100E /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		3CA3184723BE5E07003E100E /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8E4CE8D8C9FCB040FEBB5AE7 /* Pods-yxj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxj.debug.xcconfig"; path = "Target Support Files/Pods-yxj/Pods-yxj.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
