@@ -1,6 +1,5 @@
 //
 //  SceneDelegate.swift
-//  游戏基
 //
 //  Created by 罗彦鹏 on 2020/1/3.
 //  Copyright © 2020 罗彦鹏. All rights reserved.
@@ -8,6 +7,8 @@
 
 import UIKit
 import SwiftUI
+import Foundation
+import Alamofire
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -25,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
         let contentView = ContentView().environment(\.managedObjectContext, context)
-
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
@@ -33,6 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+        demoRequest()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

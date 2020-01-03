@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C58FCB923BF848F0069D4A4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58FCB823BF848F0069D4A4 /* APIRequest.swift */; };
+		3C58FCBB23BF88440069D4A4 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58FCBA23BF88440069D4A4 /* APIResource.swift */; };
+		3C58FCBD23BF89BC0069D4A4 /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58FCBC23BF89BC0069D4A4 /* APIParameters.swift */; };
 		3CA3180D23BE561B003E100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3180C23BE561B003E100E /* AppDelegate.swift */; };
 		3CA3180F23BE561B003E100E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3180E23BE561B003E100E /* SceneDelegate.swift */; };
 		3CA3181223BE561B003E100E /* ___.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3181023BE561B003E100E /* ___.xcdatamodeld */; };
@@ -14,29 +17,17 @@
 		3CA3181623BE561D003E100E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3181523BE561D003E100E /* Assets.xcassets */; };
 		3CA3181923BE561D003E100E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3181823BE561D003E100E /* Preview Assets.xcassets */; };
 		3CA3181C23BE561D003E100E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3181A23BE561D003E100E /* LaunchScreen.storyboard */; };
-		3CA3182723BE561D003E100E /* ___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3182623BE561D003E100E /* ___Tests.swift */; };
-		3CA3183223BE561D003E100E /* ___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3183123BE561D003E100E /* ___UITests.swift */; };
+		3CA3184323BE5BDB003E100E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3184223BE5BDB003E100E /* API.swift */; };
+		3CA3184823BE5E08003E100E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3184723BE5E07003E100E /* Podfile */; };
+		67F629A380FBAE029698B739 /* Pods_yxj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3CA3182323BE561D003E100E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CA3180123BE561B003E100E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3CA3180823BE561B003E100E;
-			remoteInfo = "游戏基";
-		};
-		3CA3182E23BE561D003E100E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CA3180123BE561B003E100E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3CA3180823BE561B003E100E;
-			remoteInfo = "游戏基";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		3CA3180923BE561B003E100E /* 游戏基.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "游戏基.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A3A6C9F4B01A436987EAC1 /* Pods-yxj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxj.release.xcconfig"; path = "Target Support Files/Pods-yxj/Pods-yxj.release.xcconfig"; sourceTree = "<group>"; };
+		3C58FCB823BF848F0069D4A4 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		3C58FCBA23BF88440069D4A4 /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
+		3C58FCBC23BF89BC0069D4A4 /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
+		3CA3180923BE561B003E100E /* yxj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yxj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA3180C23BE561B003E100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA3180E23BE561B003E100E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3CA3181123BE561B003E100E /* ___.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "___.xcdatamodel"; sourceTree = "<group>"; };
@@ -45,12 +36,11 @@
 		3CA3181823BE561D003E100E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CA3181B23BE561D003E100E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CA3181D23BE561D003E100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CA3182223BE561D003E100E /* 游戏基Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "游戏基Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CA3182623BE561D003E100E /* ___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___Tests.swift"; sourceTree = "<group>"; };
-		3CA3182823BE561D003E100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CA3182D23BE561D003E100E /* 游戏基UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "游戏基UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CA3183123BE561D003E100E /* ___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___UITests.swift"; sourceTree = "<group>"; };
-		3CA3183323BE561D003E100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA3184223BE5BDB003E100E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3CA3184623BE5DF3003E100E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = "/Users/Luobro/workspace/swift demo/游戏基/yxj/Podfile"; sourceTree = "<absolute>"; };
+		3CA3184723BE5E07003E100E /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		8E4CE8D8C9FCB040FEBB5AE7 /* Pods-yxj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxj.debug.xcconfig"; path = "Target Support Files/Pods-yxj/Pods-yxj.debug.xcconfig"; sourceTree = "<group>"; };
+		F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,20 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CA3181F23BE561D003E100E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CA3182A23BE561D003E100E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				67F629A380FBAE029698B739 /* Pods_yxj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,36 +58,37 @@
 		3CA3180023BE561B003E100E = {
 			isa = PBXGroup;
 			children = (
-				3CA3180B23BE561B003E100E /* 游戏基 */,
-				3CA3182523BE561D003E100E /* 游戏基Tests */,
-				3CA3183023BE561D003E100E /* 游戏基UITests */,
+				3CA3184723BE5E07003E100E /* Podfile */,
+				3CA3180B23BE561B003E100E /* yxj */,
 				3CA3180A23BE561B003E100E /* Products */,
+				BF30A2D83D8146641ABE8F3C /* Pods */,
+				77547F1927EF78F7E9F2AA74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		3CA3180A23BE561B003E100E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CA3180923BE561B003E100E /* 游戏基.app */,
-				3CA3182223BE561D003E100E /* 游戏基Tests.xctest */,
-				3CA3182D23BE561D003E100E /* 游戏基UITests.xctest */,
+				3CA3180923BE561B003E100E /* yxj.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3CA3180B23BE561B003E100E /* 游戏基 */ = {
+		3CA3180B23BE561B003E100E /* yxj */ = {
 			isa = PBXGroup;
 			children = (
+				3CA3181D23BE561D003E100E /* Info.plist */,
+				3CA3184623BE5DF3003E100E /* Podfile */,
 				3CA3180C23BE561B003E100E /* AppDelegate.swift */,
 				3CA3180E23BE561B003E100E /* SceneDelegate.swift */,
-				3CA3181323BE561B003E100E /* ContentView.swift */,
 				3CA3181523BE561D003E100E /* Assets.xcassets */,
-				3CA3181A23BE561D003E100E /* LaunchScreen.storyboard */,
-				3CA3181D23BE561D003E100E /* Info.plist */,
 				3CA3181023BE561B003E100E /* ___.xcdatamodeld */,
+				3CA3181A23BE561D003E100E /* LaunchScreen.storyboard */,
 				3CA3181723BE561D003E100E /* Preview Content */,
+				3CA3183F23BE5B81003E100E /* View */,
+				3CA3184123BE5BBD003E100E /* Network */,
 			);
-			path = "游戏基";
+			path = yxj;
 			sourceTree = "<group>";
 		};
 		3CA3181723BE561D003E100E /* Preview Content */ = {
@@ -121,79 +99,63 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3CA3182523BE561D003E100E /* 游戏基Tests */ = {
+		3CA3183F23BE5B81003E100E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3CA3182623BE561D003E100E /* ___Tests.swift */,
-				3CA3182823BE561D003E100E /* Info.plist */,
+				3CA3181323BE561B003E100E /* ContentView.swift */,
 			);
-			path = "游戏基Tests";
+			path = View;
 			sourceTree = "<group>";
 		};
-		3CA3183023BE561D003E100E /* 游戏基UITests */ = {
+		3CA3184123BE5BBD003E100E /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3CA3183123BE561D003E100E /* ___UITests.swift */,
-				3CA3183323BE561D003E100E /* Info.plist */,
+				3CA3184223BE5BDB003E100E /* API.swift */,
+				3C58FCB823BF848F0069D4A4 /* APIRequest.swift */,
+				3C58FCBA23BF88440069D4A4 /* APIResource.swift */,
+				3C58FCBC23BF89BC0069D4A4 /* APIParameters.swift */,
 			);
-			path = "游戏基UITests";
+			path = Network;
+			sourceTree = "<group>";
+		};
+		77547F1927EF78F7E9F2AA74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF30A2D83D8146641ABE8F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E4CE8D8C9FCB040FEBB5AE7 /* Pods-yxj.debug.xcconfig */,
+				36A3A6C9F4B01A436987EAC1 /* Pods-yxj.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CA3180823BE561B003E100E /* 游戏基 */ = {
+		3CA3180823BE561B003E100E /* yxj */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CA3183623BE561D003E100E /* Build configuration list for PBXNativeTarget "游戏基" */;
+			buildConfigurationList = 3CA3183623BE561D003E100E /* Build configuration list for PBXNativeTarget "yxj" */;
 			buildPhases = (
+				D54017209BADDFBF2C751310 /* [CP] Check Pods Manifest.lock */,
 				3CA3180523BE561B003E100E /* Sources */,
 				3CA3180623BE561B003E100E /* Frameworks */,
 				3CA3180723BE561B003E100E /* Resources */,
+				628AD3C0BC174E536C404206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "游戏基";
+			name = yxj;
 			productName = "游戏基";
-			productReference = 3CA3180923BE561B003E100E /* 游戏基.app */;
+			productReference = 3CA3180923BE561B003E100E /* yxj.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3CA3182123BE561D003E100E /* 游戏基Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3CA3183923BE561D003E100E /* Build configuration list for PBXNativeTarget "游戏基Tests" */;
-			buildPhases = (
-				3CA3181E23BE561D003E100E /* Sources */,
-				3CA3181F23BE561D003E100E /* Frameworks */,
-				3CA3182023BE561D003E100E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3CA3182423BE561D003E100E /* PBXTargetDependency */,
-			);
-			name = "游戏基Tests";
-			productName = "游戏基Tests";
-			productReference = 3CA3182223BE561D003E100E /* 游戏基Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3CA3182C23BE561D003E100E /* 游戏基UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3CA3183C23BE561D003E100E /* Build configuration list for PBXNativeTarget "游戏基UITests" */;
-			buildPhases = (
-				3CA3182923BE561D003E100E /* Sources */,
-				3CA3182A23BE561D003E100E /* Frameworks */,
-				3CA3182B23BE561D003E100E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3CA3182F23BE561D003E100E /* PBXTargetDependency */,
-			);
-			name = "游戏基UITests";
-			productName = "游戏基UITests";
-			productReference = 3CA3182D23BE561D003E100E /* 游戏基UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -208,17 +170,9 @@
 					3CA3180823BE561B003E100E = {
 						CreatedOnToolsVersion = 11.3;
 					};
-					3CA3182123BE561D003E100E = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 3CA3180823BE561B003E100E;
-					};
-					3CA3182C23BE561D003E100E = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 3CA3180823BE561B003E100E;
-					};
 				};
 			};
-			buildConfigurationList = 3CA3180423BE561B003E100E /* Build configuration list for PBXProject "游戏基" */;
+			buildConfigurationList = 3CA3180423BE561B003E100E /* Build configuration list for PBXProject "yxj" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,9 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CA3180823BE561B003E100E /* 游戏基 */,
-				3CA3182123BE561D003E100E /* 游戏基Tests */,
-				3CA3182C23BE561D003E100E /* 游戏基UITests */,
+				3CA3180823BE561B003E100E /* yxj */,
 			);
 		};
 /* End PBXProject section */
@@ -245,25 +197,54 @@
 			files = (
 				3CA3181C23BE561D003E100E /* LaunchScreen.storyboard in Resources */,
 				3CA3181923BE561D003E100E /* Preview Assets.xcassets in Resources */,
+				3CA3184823BE5E08003E100E /* Podfile in Resources */,
 				3CA3181623BE561D003E100E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CA3182023BE561D003E100E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CA3182B23BE561D003E100E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		628AD3C0BC174E536C404206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yxj/Pods-yxj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yxj/Pods-yxj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yxj/Pods-yxj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54017209BADDFBF2C751310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yxj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CA3180523BE561B003E100E /* Sources */ = {
@@ -273,40 +254,15 @@
 				3CA3180D23BE561B003E100E /* AppDelegate.swift in Sources */,
 				3CA3180F23BE561B003E100E /* SceneDelegate.swift in Sources */,
 				3CA3181423BE561B003E100E /* ContentView.swift in Sources */,
+				3CA3184323BE5BDB003E100E /* API.swift in Sources */,
+				3C58FCBD23BF89BC0069D4A4 /* APIParameters.swift in Sources */,
+				3C58FCBB23BF88440069D4A4 /* APIResource.swift in Sources */,
+				3C58FCB923BF848F0069D4A4 /* APIRequest.swift in Sources */,
 				3CA3181223BE561B003E100E /* ___.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CA3181E23BE561D003E100E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3CA3182723BE561D003E100E /* ___Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CA3182923BE561D003E100E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3CA3183223BE561D003E100E /* ___UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3CA3182423BE561D003E100E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3CA3180823BE561B003E100E /* 游戏基 */;
-			targetProxy = 3CA3182323BE561D003E100E /* PBXContainerItemProxy */;
-		};
-		3CA3182F23BE561D003E100E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3CA3180823BE561B003E100E /* 游戏基 */;
-			targetProxy = 3CA3182E23BE561D003E100E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3CA3181A23BE561D003E100E /* LaunchScreen.storyboard */ = {
@@ -323,6 +279,7 @@
 		3CA3183423BE561D003E100E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -383,6 +340,7 @@
 		3CA3183523BE561D003E100E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -436,13 +394,15 @@
 		};
 		3CA3183723BE561D003E100E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4CE8D8C9FCB040FEBB5AE7 /* Pods-yxj.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"游戏基/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"yxj/Preview Content\"";
 				DEVELOPMENT_TEAM = W94FGD5TRM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "游戏基/Info.plist";
+				INFOPLIST_FILE = yxj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,13 +416,15 @@
 		};
 		3CA3183823BE561D003E100E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A3A6C9F4B01A436987EAC1 /* Pods-yxj.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"游戏基/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"yxj/Preview Content\"";
 				DEVELOPMENT_TEAM = W94FGD5TRM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "游戏基/Info.plist";
+				INFOPLIST_FILE = yxj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,94 +436,10 @@
 			};
 			name = Release;
 		};
-		3CA3183A23BE561D003E100E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W94FGD5TRM;
-				INFOPLIST_FILE = "游戏基Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "luobro.---Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/游戏基.app/游戏基";
-			};
-			name = Debug;
-		};
-		3CA3183B23BE561D003E100E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W94FGD5TRM;
-				INFOPLIST_FILE = "游戏基Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "luobro.---Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/游戏基.app/游戏基";
-			};
-			name = Release;
-		};
-		3CA3183D23BE561D003E100E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W94FGD5TRM;
-				INFOPLIST_FILE = "游戏基UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "luobro.---UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "游戏基";
-			};
-			name = Debug;
-		};
-		3CA3183E23BE561D003E100E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W94FGD5TRM;
-				INFOPLIST_FILE = "游戏基UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "luobro.---UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "游戏基";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CA3180423BE561B003E100E /* Build configuration list for PBXProject "游戏基" */ = {
+		3CA3180423BE561B003E100E /* Build configuration list for PBXProject "yxj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CA3183423BE561D003E100E /* Debug */,
@@ -570,29 +448,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CA3183623BE561D003E100E /* Build configuration list for PBXNativeTarget "游戏基" */ = {
+		3CA3183623BE561D003E100E /* Build configuration list for PBXNativeTarget "yxj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CA3183723BE561D003E100E /* Debug */,
 				3CA3183823BE561D003E100E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3CA3183923BE561D003E100E /* Build configuration list for PBXNativeTarget "游戏基Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3CA3183A23BE561D003E100E /* Debug */,
-				3CA3183B23BE561D003E100E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3CA3183C23BE561D003E100E /* Build configuration list for PBXNativeTarget "游戏基UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3CA3183D23BE561D003E100E /* Debug */,
-				3CA3183E23BE561D003E100E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

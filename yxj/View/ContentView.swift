@@ -1,6 +1,5 @@
 //
 //  ContentView.swift
-//  游戏基
 //
 //  Created by 罗彦鹏 on 2020/1/3.
 //  Copyright © 2020 罗彦鹏. All rights reserved.
@@ -13,24 +12,42 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
+            Text("正在促销")
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image("first")
-                        Text("First")
+                        Text("正在促销")
                     }
                 }
                 .tag(0)
-            Text("Second View")
+            Text("所有游戏")
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image("second")
-                        Text("Second")
+                        Text("所有游戏")
                     }
                 }
                 .tag(1)
+            Text("奖杯")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image("second")
+                        Text("奖杯")
+                    }
+                }
+                .tag(2)
+            Text("我的")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image("second")
+                        Text("我的")
+                    }
+                }
+                .tag(3)
         }
     }
 }
