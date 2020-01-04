@@ -17,19 +17,25 @@ class APIResource {
 }
 
 // 基本扩展
-/**
-待补充
- */
+
 extension APIResource {
     enum Status: String {
         case error
-        case success
+        case success = "success"
     }
     var status: Status? {
-        return Status.init(rawValue: (raw?["status"].string)!)
+        return Status.init(rawValue: (raw?["response_status"].string)!)
     }
     
     var message: String? {
-        return raw?["message"].string
+        return raw?["msg"].string
+    }
+    
+    var extra: String? {
+        return raw?["info"]["extra"].string
+    }
+    
+    var data: JSON? {
+        return raw?["info"]["data"]
     }
 }

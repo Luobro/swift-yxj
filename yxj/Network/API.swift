@@ -15,7 +15,7 @@ final class API {
         self.host = host
     }
     
-    func fetch<R: APIRequest> (_ request: R, completion: @escaping (JSON) -> Void) {
+    func fetch<R: APIRequest> (_ request: R, completion: @escaping (APIResource) -> Void) {
         let headers: HTTPHeaders = [:] // 按需定制
         
         Alamofire
@@ -35,7 +35,7 @@ final class API {
                 }
                 
                 let json = JSON(jsonStr)
-                completion(json)
+                completion(APIResource(raw: json))
             }
     }
 }
@@ -50,7 +50,7 @@ struct MyRequest: APIRequest {
 
 func demoRequest() {
     API(host:"https://api-plus.lhbgame.com/").fetch(MyRequest(paramenters: nil)) {res in
-        print(res["info"]["data"][0])
+        print(res.data as Any)
     }
 }
 
