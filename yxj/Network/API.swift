@@ -49,8 +49,8 @@ struct MyRequest: APIRequest {
 }
 
 func demoRequest() {
-    API(host:"https://api-plus.lhbgame.com/").fetch(MyRequest(paramenters: nil)) {res in
-        print(res.data as Any)
+    API(host:"https://api-plus.lhbgame.com/").fetch(MyRequest(paramenters: nil)) {resource in
+        print(resource.data as Any)
     }
 }
 

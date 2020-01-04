@@ -1,6 +1,0 @@
-framework module Pods_yxj {
-  umbrella header "Pods-yxj-umbrella.h"
-
-  export *
-  module * { export * }
-}

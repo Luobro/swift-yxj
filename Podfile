@@ -7,6 +7,7 @@ target 'yxj' do
   use_frameworks!
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SDWebImageSwiftUI'
   # Pods for yxj
 
 end

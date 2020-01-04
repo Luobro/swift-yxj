@@ -19,6 +19,7 @@
 		3CA3181C23BE561D003E100E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3181A23BE561D003E100E /* LaunchScreen.storyboard */; };
 		3CA3184323BE5BDB003E100E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3184223BE5BDB003E100E /* API.swift */; };
 		3CA3184823BE5E08003E100E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3184723BE5E07003E100E /* Podfile */; };
+		3CFC2E0A23C03229005DE991 /* GoodsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC2E0923C03229005DE991 /* GoodsRowView.swift */; };
 		67F629A380FBAE029698B739 /* Pods_yxj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		3CA3184223BE5BDB003E100E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3CA3184623BE5DF3003E100E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = "/Users/Luobro/workspace/swift demo/游戏基/yxj/Podfile"; sourceTree = "<absolute>"; };
 		3CA3184723BE5E07003E100E /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3CFC2E0923C03229005DE991 /* GoodsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsRowView.swift; sourceTree = "<group>"; };
 		8E4CE8D8C9FCB040FEBB5AE7 /* Pods-yxj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxj.debug.xcconfig"; path = "Target Support Files/Pods-yxj/Pods-yxj.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3CA3181323BE561B003E100E /* ContentView.swift */,
+				3CFC2E0923C03229005DE991 /* GoodsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				3C58FCBD23BF89BC0069D4A4 /* APIParameters.swift in Sources */,
 				3C58FCBB23BF88440069D4A4 /* APIResource.swift in Sources */,
 				3C58FCB923BF848F0069D4A4 /* APIRequest.swift in Sources */,
+				3CFC2E0A23C03229005DE991 /* GoodsRowView.swift in Sources */,
 				3CA3181223BE561B003E100E /* ___.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
