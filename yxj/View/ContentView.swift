@@ -12,8 +12,7 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            Text("正在促销")
-                .font(.title)
+            NavigationView { GoodsListView() }
                 .tabItem {
                     VStack {
                         Image("first")

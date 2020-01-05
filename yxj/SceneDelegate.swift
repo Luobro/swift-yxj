@@ -34,8 +34,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
-        
-        demoRequest()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
