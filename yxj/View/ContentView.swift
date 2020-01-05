@@ -12,7 +12,7 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            NavigationView { GoodsListView() }
+            GoodsListView()
                 .tabItem {
                     VStack {
                         Image("first")

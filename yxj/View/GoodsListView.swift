@@ -10,22 +10,21 @@ import SwiftUI
 
 struct GoodsListView: View {
     
-    @State var listData: GoodsList = []
+//    @State var listData: GoodsList = []
+    @ObservedObject var goodsList = GoodsList()
+    
     var body: some View {
-        List {
-            ForEach(listData, id: \.self) { item in
-                GoodsRowView(data:item)
-            }
-        }.onAppear {
-            API(host:"https://api-plus.lhbgame.com/").fetch(MyRequest(paramenters: nil)) {resource in
-                let rawList = resource.data!.arrayValue
-                let list: GoodsList = rawList.map { rawData in
-                    let cover = rawData["cover_image"].string
-                    let title = rawData["name"].string
-                    return GoodsItem(cover: cover, title: title)
+        NavigationView {
+            List() {
+                ForEach(goodsList.list, id: \.title) { item in
+                    GoodsRowView(data:item)
                 }
-                self.listData = list
+                Text("。。。") // 触底加载更多数据
+                    .onAppear {
+                        self.goodsList.loadData()
+                    }
             }
+            .navigationBarTitle(Text("正在促销"))
         }
     }
 }

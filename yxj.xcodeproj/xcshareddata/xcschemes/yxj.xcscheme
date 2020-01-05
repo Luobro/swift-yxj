@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3CA3180823BE561B003E100E"
-               BuildableName = "yxj.app"
+               BuildableName = "&#x6e38;&#x620f;&#x57fa;.app"
                BlueprintName = "yxj"
                ReferencedContainer = "container:yxj.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CA3180823BE561B003E100E"
-            BuildableName = "yxj.app"
+            BuildableName = "&#x6e38;&#x620f;&#x57fa;.app"
             BlueprintName = "yxj"
             ReferencedContainer = "container:yxj.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CA3180823BE561B003E100E"
-            BuildableName = "yxj.app"
+            BuildableName = "&#x6e38;&#x620f;&#x57fa;.app"
             BlueprintName = "yxj"
             ReferencedContainer = "container:yxj.xcodeproj">
          </BuildableReference>
