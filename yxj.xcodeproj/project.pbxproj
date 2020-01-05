@@ -21,6 +21,7 @@
 		3CA3184823BE5E08003E100E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3184723BE5E07003E100E /* Podfile */; };
 		3CB5FEFA23C08852005A79EE /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5FEF923C08852005A79EE /* Goods.swift */; };
 		3CB5FEFC23C09949005A79EE /* GoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5FEFB23C09949005A79EE /* GoodsListView.swift */; };
+		3CB5FEFE23C19934005A79EE /* MyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5FEFD23C19934005A79EE /* MyAPI.swift */; };
 		3CFC2E0A23C03229005DE991 /* GoodsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC2E0923C03229005DE991 /* GoodsRowView.swift */; };
 		67F629A380FBAE029698B739 /* Pods_yxj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */; };
 /* End PBXBuildFile section */
@@ -30,7 +31,7 @@
 		3C58FCB823BF848F0069D4A4 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		3C58FCBA23BF88440069D4A4 /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
 		3C58FCBC23BF89BC0069D4A4 /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
-		3CA3180923BE561B003E100E /* yxj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yxj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA3180923BE561B003E100E /* 游戏基.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "游戏基.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA3180C23BE561B003E100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA3180E23BE561B003E100E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3CA3181123BE561B003E100E /* ___.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "___.xcdatamodel"; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		3CA3184723BE5E07003E100E /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3CB5FEF923C08852005A79EE /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
 		3CB5FEFB23C09949005A79EE /* GoodsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListView.swift; sourceTree = "<group>"; };
+		3CB5FEFD23C19934005A79EE /* MyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPI.swift; sourceTree = "<group>"; };
 		3CFC2E0923C03229005DE991 /* GoodsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsRowView.swift; sourceTree = "<group>"; };
 		8E4CE8D8C9FCB040FEBB5AE7 /* Pods-yxj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxj.debug.xcconfig"; path = "Target Support Files/Pods-yxj/Pods-yxj.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AD2EDE5FD786571605CD8A /* Pods_yxj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +76,7 @@
 		3CA3180A23BE561B003E100E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CA3180923BE561B003E100E /* yxj.app */,
+				3CA3180923BE561B003E100E /* 游戏基.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3CA3184223BE5BDB003E100E /* API.swift */,
+				3CB5FEFD23C19934005A79EE /* MyAPI.swift */,
 				3C58FCB823BF848F0069D4A4 /* APIRequest.swift */,
 				3C58FCBA23BF88440069D4A4 /* APIResource.swift */,
 				3C58FCBC23BF89BC0069D4A4 /* APIParameters.swift */,
@@ -169,7 +172,7 @@
 			);
 			name = yxj;
 			productName = "游戏基";
-			productReference = 3CA3180923BE561B003E100E /* yxj.app */;
+			productReference = 3CA3180923BE561B003E100E /* 游戏基.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,6 +271,7 @@
 			files = (
 				3CA3180D23BE561B003E100E /* AppDelegate.swift in Sources */,
 				3CA3180F23BE561B003E100E /* SceneDelegate.swift in Sources */,
+				3CB5FEFE23C19934005A79EE /* MyAPI.swift in Sources */,
 				3CB5FEFC23C09949005A79EE /* GoodsListView.swift in Sources */,
 				3CA3181423BE561B003E100E /* ContentView.swift in Sources */,
 				3CA3184323BE5BDB003E100E /* API.swift in Sources */,
@@ -426,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "luobro.---";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "游戏基";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "luobro.---";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "游戏基";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
