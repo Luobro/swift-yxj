@@ -13,6 +13,10 @@ struct GoodsListView: View {
 //    @State var listData: GoodsList = []
     @ObservedObject var goodsList = GoodsList()
     
+    init() {
+        UITableView.appearance().showsVerticalScrollIndicator = false
+    }
+
     var body: some View {
         NavigationView {
             List() {
