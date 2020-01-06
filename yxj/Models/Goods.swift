@@ -7,55 +7,81 @@
 //
 import Combine
 import SwiftUI
+import SwiftyJSON
 
-class GoodsItem {
+struct GoodsItem {
     var cover: String?
     var title: String?
-    init(cover: String?, title: String?) {
-        self.cover = cover
-        self.title = title
-    }
+    var salePrice: Float?
+    var discount: Int?
+    var originPrice: Float?
+    var plusPrice: Float?
+    var plusDiscount: Int?
 }
 
 class GoodsList: ObservableObject {
     @Published var list:[GoodsItem] = []
-    var hasMore: Bool = true
     var page: Int = 1
-    var type: String? = "latest"
+    var type: String = "latest"
     var isLoding: Bool = false
-    
+    var lastPage:[GoodsItem] = []
+    var hasMore: Bool {
+        switch self.lastPage.count {
+            case 1..<20:
+                return false
+            default:
+                return true
+        }
+    }
+
     init(type: String = "latest") {
         self.type = type
         loadData()
     }
-    func loadData() {
-        if isLoding { return }
-        isLoding = true
-        if !hasMore {
-            isLoding = false
+    
+    func parseRaw(_ rawData: JSON?)->[GoodsItem] {
+        guard let raw = rawData else {
+            return []
+        }
+        return raw.arrayValue.map {
+            GoodsItem(
+                cover: $0["cover_image"].string,
+                title: $0["name"].string,
+                salePrice: $0["price"]["non_plus_user"]["sale_price"].float,
+                discount: $0["price"]["non_plus_user"]["discount"].int,
+                originPrice: $0["price"]["non_plus_user"]["origin_price"].float,
+                plusPrice: $0["price"]["plus_user"]["sale_price"].float,
+                plusDiscount: $0["price"]["plus_user"]["discount"].int
+            )
+        }
+    }
+    
+    func changeType(_ type: String) {
+        self.list = []
+        self.page = 1
+        self.lastPage = []
+        self.isLoding = false
+        self.type = type
+        
+        self.loadData()
+    }
+    
+    func loadNewPage (_ list: [GoodsItem]) {
+        guard list.count > 0 else {
             return
         }
-        API(.getPromotionList, ["type": type ?? "latest", "page": page]) { data in
-            let rawList = data.arrayValue
-            let list: [GoodsItem] = rawList.map { rawData in
-                let cover = rawData["cover_image"].string
-                let title = rawData["name"].string
-                return GoodsItem(cover: cover, title: title)
-            }
-            
-            if list.count < 20 {
-                self.hasMore = false
-            }
-            
-            if self.page == 1 {
-                self.list = list
-                self.page += 1
-                self.isLoding = false
-                return
-            }
-            
-            self.list += list
-            self.page += 1
+        self.lastPage = list
+        self.list += list
+        self.page += 1
+    }
+    
+    func loadData() {
+        if isLoding { return }
+        if !hasMore { return }
+        isLoding = true
+        API(.getPromotionList, ["type": type, "page": page]) { rawData in
+            let list = self.parseRaw(rawData)
+            self.loadNewPage(list)
             self.isLoding = false
         }
     }

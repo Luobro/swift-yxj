@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5CB3C023C3226700033853 /* demoWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CB3BF23C3226700033853 /* demoWith.swift */; };
 		3CA3180D23BE561B003E100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3180C23BE561B003E100E /* AppDelegate.swift */; };
 		3CA3180F23BE561B003E100E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3180E23BE561B003E100E /* SceneDelegate.swift */; };
 		3CA3181223BE561B003E100E /* ___.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3181023BE561B003E100E /* ___.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		36A3A6C9F4B01A436987EAC1 /* Pods-yxj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxj.release.xcconfig"; path = "Target Support Files/Pods-yxj/Pods-yxj.release.xcconfig"; sourceTree = "<group>"; };
+		3C5CB3BF23C3226700033853 /* demoWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoWith.swift; sourceTree = "<group>"; };
 		3CA3180923BE561B003E100E /* yxj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yxj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA3180C23BE561B003E100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA3180E23BE561B003E100E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				3CA3181323BE561B003E100E /* ContentView.swift */,
 				3CB5FEFB23C09949005A79EE /* GoodsListView.swift */,
 				3CFC2E0923C03229005DE991 /* GoodsRowView.swift */,
+				3C5CB3BF23C3226700033853 /* demoWith.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA3180D23BE561B003E100E /* AppDelegate.swift in Sources */,
+				3C5CB3C023C3226700033853 /* demoWith.swift in Sources */,
 				3CA3180F23BE561B003E100E /* SceneDelegate.swift in Sources */,
 				3CB5FEFE23C19934005A79EE /* API.swift in Sources */,
 				3CB5FEFC23C09949005A79EE /* GoodsListView.swift in Sources */,
